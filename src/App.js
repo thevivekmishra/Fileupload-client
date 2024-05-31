@@ -22,7 +22,6 @@ function App() {
 
         let response = await uploadFile(data);
         setResult(response.path);
-        // console.log(response);
       }
     };
     getImage();
@@ -31,10 +30,10 @@ function App() {
   return (
     <div className="container">
       <div className="box">
-        <h1>Effortlessly Share Your Files</h1>
-        <p>Upload your file in just a clicks and receive a link to share instantly.</p>
-        <p>Hang tight after uploading your download link will be ready shortly!</p>
-        <button className="button" onClick={() => onUploadClick()}>
+        <h1>Effortlessly Share Your Files!</h1>
+        <p>Upload your file in just a click and receive a link to share instantly.</p>
+        <p>Hang tight after uploading; your download link will be ready shortly!</p>
+        <button className="button" onClick={onUploadClick}>
           Upload
           <img src={upload} className="upload-img" alt="upload icon" />
         </button>
@@ -44,15 +43,19 @@ function App() {
           style={{ display: 'none' }}
           onChange={(e) => setFile(e.target.files[0])}
         />
-        <div className='link'>
-          <a href={result} target="_blank">{result}</a>
-        </div>
+        {result && (
+          <div className='link'>
+            <a href={result} target="_blank">{result}</a>
+          </div>
+        )}
       </div>
-      <div className="footer">
+  
+      <div className="credit">
         <p>Designed and Developed by Vivek Kumar Mishra </p>
       </div>
     </div>
   );
+  
 }
 
 export default App;
