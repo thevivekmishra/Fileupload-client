@@ -48,3 +48,12 @@
   overflow-wrap: break-word; 
   text-align: left; 
 }
+.footer {
+  margin-top: 20px;
+}
+
+.footer p {
+  color: #777;
+  font-size: 14px;
+  text-align: center;
+}
