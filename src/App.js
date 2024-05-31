@@ -31,9 +31,9 @@ function App() {
   return (
     <div className="container">
       <div className="box">
-        <h1>Effortlessly Share Your Files!</h1>
-        <p>Upload your file in just a few clicks and receive a link to share instantly.</p>
-        <p>Hang tight after uploading – your download link will be ready shortly!</p>
+        <h1>Effortlessly Share Your Files</h1>
+        <p>Upload your file in just a clicks and receive a link to share instantly.</p>
+        <p>Hang tight after uploading your download link will be ready shortly!</p>
         <button className="button" onClick={() => onUploadClick()}>
           Upload
           <img src={upload} className="upload-img" alt="upload icon" />
@@ -49,7 +49,7 @@ function App() {
         </div>
       </div>
       <div className="footer">
-        <p>Designed and Developed by Vivek Kumar Mishra</p>
+        <p>Designed and Developed by Vivek Kumar Mishra </p>
       </div>
     </div>
   );
