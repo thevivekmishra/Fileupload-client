@@ -25,6 +25,11 @@ body, html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+@media (max-width: 400px) {
+  .container {
+    background-image: url("./assets/image5.jpg");
+  }
+}
 .container {
   display: flex;
   justify-content: center;
@@ -38,7 +43,8 @@ body, html {
   width: 90%;
   max-width: 600px; 
   border-radius: 10px;
-  background-color: rgba(245, 245, 245, 0.831);
+  /* background-color: rgba(245, 245, 245, 0.831); */
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
